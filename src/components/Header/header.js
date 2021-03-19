@@ -8,9 +8,9 @@ const Header = ({
 }) => (
 
 	<header>
-			<h1>
-				<a href={ link }>{ title }</a>
-			</h1>
+		<h1>
+			<a href={ link }>{ title }</a>
+		</h1>
 	</header>
 
 )

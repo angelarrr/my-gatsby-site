@@ -11,11 +11,9 @@ import PropTypes from "prop-types"
 import "./layout.css"
 
 const Layout = ({ children }) => (
-	<>
-		<div className="base-layout">
-			{ children }
-		</div>
-	</>
+	<div className="base-layout">
+		{ children }
+	</div>
 )
 
 

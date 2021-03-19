@@ -7,29 +7,29 @@ import "./header.css"
  * Renders a h1 section header with a link
  */
 const Header = ({
-	link,
-	title
+    link,
+    title
 }) => (
 
-	<header>
-		<h1>
-			<a
-				href={ link }
-				rel="noreferrer"
-				target="_blank"
-			>
-				{ title }
-			</a>
-		</h1>
-	</header>
+    <header>
+        <h1>
+            <a
+                href={ link }
+                rel="noreferrer"
+                target="_blank"
+            >
+                { title }
+            </a>
+        </h1>
+    </header>
 
 )
 
 Header.propTypes = {
-	/* External link the header title will navigate to when clicked */
-	link: PropTypes.string.isRequired,
-	/* Header title */
-	title: PropTypes.string.isRequired,
+    /* External link the header title will navigate to when clicked */
+    link: PropTypes.string.isRequired,
+    /* Header title */
+    title: PropTypes.string.isRequired,
 }
 
 export default Header

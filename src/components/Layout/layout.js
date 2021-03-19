@@ -8,15 +8,14 @@ import "./layout.css"
  * Provides base styles
  */
 const Layout = ({ children }) => (
-	<div className="base-layout">
-		{ children }
-	</div>
+    <div className="base-layout">
+        { children }
+    </div>
 )
 
-
 Layout.propTypes = {
-	/* Content that layout wraps */
-	children: PropTypes.node.isRequired,
+    /* Content that layout wraps */
+    children: PropTypes.node.isRequired,
 }
 
 export default Layout

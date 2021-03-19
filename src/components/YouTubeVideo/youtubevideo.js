@@ -1,10 +1,15 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 
+/**
+ * YouTubeVideo component
+ * Embeds a YouTube video
+ */
 const YouTubeVideo = ({
-    title = "YouTube video",
+    title,
     videoId
 }) => (
+
     <div>
         <iframe
             width="560"
@@ -16,6 +21,7 @@ const YouTubeVideo = ({
             title={ title }
         />
     </div>
+
 )
 
 YouTubeVideo.propTypes = {
@@ -23,6 +29,10 @@ YouTubeVideo.propTypes = {
     title: PropTypes.string,
     /* Unique ID of video found in the YouTube embed link of video */
     videoId: PropTypes.string.isRequired
+}
+
+YouTubeVideo.defaultProps = {
+	title: "YouTube Video"
 }
 
 export default YouTubeVideo
